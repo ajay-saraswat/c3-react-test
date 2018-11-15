@@ -1,0 +1,54 @@
+{
+    "env": {
+        "browser": true,
+        "mocha": true
+    },
+    "extends": ["airbnb-base"],
+    "globals": {
+        "spy": true,
+        "stub": true,
+        "mount": true,
+        "shallow": true,
+        "chai": true,
+        "expect": true,
+        "sinon": true,
+        "getStoreAction": true,
+        "getMockStore": true,
+        "render": true,
+        "UsrMocks": true
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "js": true
+        }
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "semi": 2,
+        "max-len": [0, 160, 4],
+        "indent": ["error", 4],
+        "import/extensions": ["warn", "never"],
+        "import/no-unresolved": false,
+        "react/jsx-uses-vars": "error",
+        "react/jsx-uses-react": "error"
+    },
+    "settings" : {
+        "import/extensions": ["js", "jsx", "png"],
+        "import/resolver": {
+           "webpack": {
+             "config": {
+                "resolve": {
+                    "extensions": ["js", "jsx" ]
+                }
+             }
+           }
+        },
+        "import/ignore": ["node_modules", ".(scss|css)$"]
+    }
+}

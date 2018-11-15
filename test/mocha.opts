@@ -1,0 +1,7 @@
+--compilers js:babel-core/register
+--compilers jsx:babel-core/register
+--require ignore-styles
+--require ./test/utils/dom.js
+--require ./test/utils/helpers.js
+--require ./test/utils/mocks.js
+--recursive

@@ -1,0 +1,15 @@
+{
+  "reporter": ["text-summary", "html", "lcov"],
+  "exclude": [
+      "test", "test{,-*}.js", "**/*.test.js", "**/__tests__/**", "**/node_modules/**",
+      "config/**", "scripts/**",
+      "src/index.js", "src/reducers/index.js", "src/config.js", "src/containers/**", "src/styles/**",
+      "src/**/muiStyles.js"
+  ],
+  "report-dir": "./coverage",
+  "require": ["babel-register"],
+  "sourceMap": false,
+  "instrument": false,
+  "all": true,
+  "cache": false
+}

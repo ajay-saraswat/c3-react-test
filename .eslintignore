@@ -1,0 +1,6 @@
+/coverage
+webpack*.js
+/scripts
+polyfills.js
+config/env.js
+config/paths.js

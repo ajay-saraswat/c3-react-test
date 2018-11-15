@@ -1,0 +1,87 @@
+@import './shared';
+
+#app-container {
+    height: 100%;
+    opacity: 1.0;
+}
+
+// Material UI - Shared Styling
+
+.page-heading {
+    font-size: 2.57rem;
+    margin-bottom: 1rem;
+}
+
+.appBar {
+    position: relative;
+}
+
+.icon {
+    margin-right: 20px;
+}
+
+.heroUnnit {
+    background-color: #ffff;
+}
+
+.heroContent  {
+    max-width: 600px;
+    margin-left: 45px;
+    padding: 70px 0;
+}
+
+h1 {
+    font-size: 37px !important;
+    color: #216e91 !important;
+}
+
+.heroButtons {
+    margin-top: 15px;
+}
+
+.layout {
+    width: auto;
+}
+
+.cardGrid {
+    padding: 100px 100px;
+    background-color: #f7f6f5 !important;
+}
+
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: visible !important;
+}
+
+.cardContent {
+    flex-grow: 1;
+}
+
+.cardUser {
+    font-size: 18px !important;
+    color: #e93939 !important;
+    text-align: center;
+}
+
+.cardAvatar {
+    width: 80px !important;
+    height: 80px  !important;
+    margin-top: -26px;
+}
+
+.cardHeader {
+    flex-direction: column;
+    text-align: -webkit-center;
+}
+
+.deleteButton {
+    font-size: 14px;
+    color: #007FA3;
+}
+
+footer {
+    background-color: gray;
+    padding: 26px;
+}
