@@ -9,7 +9,7 @@ class App extends Component {
             <div id="app">
                 <div id="app-container">
                     <Switch>
-                        <Route path="/" render={props => <UserList {...props} />} />
+                        <Route path="/:pageNumber?/:rowCount?" render={props => <UserList {...props} />} />
                     </Switch>
                 </div>
             </div>

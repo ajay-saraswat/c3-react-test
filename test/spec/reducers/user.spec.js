@@ -57,7 +57,7 @@ describe('Actions', () => {
         describe('Happy paths', () => {
             beforeEach(() => {
                 sandbox.stub(Client, 'get').resolves(happyResult);
-                store.dispatch(actions.getUserList());
+                store.dispatch(actions.getUserList({}));
             });
 
             it('should dispatch "USER_DATA_REQUEST" action', () => {
@@ -77,7 +77,7 @@ describe('Actions', () => {
             it('should dispatch "USER_DATA_FAILURE" with response error', (done) => {
                 const error = 'Error getting for users :( ';
                 sandbox.stub(Client, 'get').rejects({ data: error });
-                store.dispatch(actions.getUserList());
+                store.dispatch(actions.getUserList({}));
                 setTimeout(() => {
                     expect(getStoreAction(store, types.USER_DATA_FAILURE)).to.eql({ error });
                     done();

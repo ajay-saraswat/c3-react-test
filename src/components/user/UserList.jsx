@@ -26,9 +26,10 @@ class UserList extends Component {
         const {
             users,
             getUserList,
+            match,
         } = this.props;
         if (!users.length) {
-            getUserList(); // fetch user list
+            getUserList(match.params); // fetch user list
         }
     }
 

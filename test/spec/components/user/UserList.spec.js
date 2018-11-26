@@ -8,6 +8,12 @@ describe('Pearson User List', () => {
     const props = {
         users: [],
         getUserList: () => Q.when(userList),
+        match: {
+            params: {
+                pageNumber: 1,
+                rowCount: 10,
+            },
+        },
     };
     const sandbox = sinon.createSandbox();
     let wrapper;
