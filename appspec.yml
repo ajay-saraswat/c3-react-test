@@ -3,12 +3,11 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/html/
+    owner: ec2-user
 hooks:
   BeforeInstall:
     - location: deploy/before_install
       timeout: 300
-      runas: root
   AfterInstall:
     - location: deploy/restart_server
       timeout: 300
-      runas: root
